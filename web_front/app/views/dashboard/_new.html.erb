@@ -1,0 +1,84 @@
+<html>
+	<%= stylesheet_link_tag "application" %>
+	<head>
+		<title>ShowCam | Dashboard</title>
+		<meta charset="utf-8" />
+		<%= javascript_include_tag "application" %>
+		<%= favicon_link_tag 'favicon.ico' %>
+	</head>
+	<body>
+		<div id='nav_float'>
+			<div id='view_logo' class='image'>
+			</div>
+			<a href='support.html'>
+				<div class='nav_button'>
+					Support
+				</div>
+			</a>
+		</div>
+		<div id='dashboard_box'>
+			<div id='search_bar'>
+				<div id='search_input'>
+				</div>
+				<div id='search_button'>
+				</div>
+			</div>
+			<div id='event_nav'>
+				.
+				<div id='sort_by_box'>
+					<a>
+							Sort By
+					</a>
+					<a>
+						<div class='sort_option' id='recent'>
+							Most Recent
+						</div>
+					</a>
+					<a>
+						<div class='sort_option' id='length'>
+							Length (Decreasing)
+						</div>
+					</a>
+					<a>
+						<div class='sort_option' id='hour'>
+							By Hour of Day
+						</div>
+					</a>
+					<a>
+						<div class='sort_option' id='weekday'>
+							By Day of Week
+						</div>
+					</a>
+					<a>
+						<div class='sort_option' id='yearday'>
+							By Day of Year
+						</div>
+					</a>
+				</div>
+				<div id='events_list'>
+					<div class='event'>
+						<div class='day_bullet'>
+						</div>
+						<div class='event_description'>
+							This is the description for an event. Lalala. :DDD
+							<!-- Show on day_bullet click -->
+							<div class='event_time'>
+								- April 11, 2014 4:35pm
+							</div>
+						</div>
+						<div class='event_tn'>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="video-container">
+				<!-- Video -->
+				<%= video_tag "mikethefrog.ogv", :size => "640x365", :controls => true %>
+				<p>
+				    Your browser doesn't support HTML5 video.
+				    <%= link_to "Download", "mikethefrog.mp4" %> the video instead.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -38,16 +38,16 @@
 					</div>
 					<div id='signup_fields'>
 						<div class='land_ff'>
-							Username <input type='text' name='username'></br>
+							Username <%= text_field :user, :name%></br>
 						</div>
 						<div class='land_ff'>
-							Password <input type='password' name='password'></br>
+							Password <%= password_field :user, :password%></br>
 						</div>
 						<div class='land_ff'>
-							Confirm Password <input type='password' name='password'></br>
+							Confirm Password <%= password_field :user, :password_confirmation%></br>
 						</div>
 						<div class='land_ff'>
-							Email <input type='text' name='email'>
+							Email <%= text_field :user, :email%>
 						</div>
 					</div>
 					<div id='login_subtext'>
@@ -57,11 +57,9 @@
 					<button id='signup_button' type='button'>
 						Sign Up
 					</button>
-					<a href='dashboard'>
 						<button id='login_button' type='submit'>
 							Log In
 						</button>
-					</a>
 				</div>
 			</div>
 			<%= render :partial => "about" %>

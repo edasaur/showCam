@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
-  post 'receiver/', 'receiver#create'
+  #post 'receiver/', 'receiver#create'
 
   get 'users/new'
 
   get 'home/', to: 'home#index'
-
-  get 'receiver/photo'
 
   get 'home/signup'#, to: ''
 

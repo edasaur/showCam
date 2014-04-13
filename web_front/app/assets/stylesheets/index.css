@@ -1,5 +1,15 @@
 /* Landing Page */
 
+@font-face {
+  font-family: "TypoSlabserif-Light";
+  src: url("TypoSlabserif-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Agency FB";
+  src: url("AGENCYR.TTF") format("truetype");
+}
+
 a {
 	border: none;
     color: inherit;
@@ -57,10 +67,10 @@ button:hover {
 	cursor: pointer;
 	cursor: hand;
 	font-family: 'Agency FB';
-	font-size: 47px;
-	height: 60px;
-	width: 250px;
-	padding: 20px 25px 20px 25px;
+	font-size: 36px;
+	height: 50px;
+	width: 200px;
+	padding: 25px 50px 25px 50px;
 }
 
 #download_button:hover {
@@ -70,7 +80,7 @@ button:hover {
 #download_bar {
 	background-color: white;
 	float: left;
-	height: 10px;
+	height: 6px;
 	margin-top: 120px;
 	margin-left: 80px;
 	position: absolute;
@@ -194,7 +204,7 @@ input {
 	cursor: hand;
 	float: right;
 	font-size: 18px;
-	height: 39px;
+	height: 36px;
 	margin-right: 0.2%;
 	padding-left: 4%;
 	padding-right: 4%;
@@ -213,8 +223,6 @@ input {
 	background-color: #444;
 	color: white;
 	height: 50px;
-	margin-right: auto;
-	margin-left: auto;
 	width: 100%;
 	z-index: 99;
 }
@@ -281,5 +289,5 @@ input {
 	opacity: 0.9;
 	padding-top: 20px;
 	transition: 0.5s;
-	z-index: 600;
+	z-index: 10000;
 }

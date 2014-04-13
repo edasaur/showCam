@@ -1,0 +1,285 @@
+/* Landing Page */
+
+a {
+	border: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+.clearfix {
+	clear: both;
+}
+
+button {
+	border: none;
+	border-radius: 40px;
+	color: white;
+	cursor: pointer;
+	cursor: hand;
+	float: right;
+	font-family: 'Agency FB';
+	font-size: 24px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 14px;
+	padding: 12px 10px 12px 10px;
+	position: relative;
+	width: 120px;
+	z-index: 501;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:hover {
+	background-color: #49d;
+	transition: 0.3s;
+}
+
+#download_button_border {
+	background-color: white;
+	border-radius: 100px;
+	float: left;
+	margin-top: 65px;
+	margin-left: 70px;
+	padding: 5px 5px 5px 5px;
+	position: relative;
+	height: 100px;
+	width: 300px;
+	z-index: 500;
+}
+
+#download_button {
+	background-color: #c03333;
+	border-radius: 60px;
+	color: white;
+	cursor: pointer;
+	cursor: hand;
+	font-family: 'Agency FB';
+	font-size: 47px;
+	height: 60px;
+	width: 250px;
+	padding: 20px 25px 20px 25px;
+}
+
+#download_button:hover {
+	background-color: #bb4f4f;
+}
+
+#download_bar {
+	background-color: white;
+	float: left;
+	height: 10px;
+	margin-top: 120px;
+	margin-left: 80px;
+	position: absolute;
+	width: 360px;
+}
+
+#login_button {
+	background-color:  #efa048;
+	float: left;
+}
+
+#login_subtext {
+	border-top: solid 1px #ddd;
+	margin-top: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 14px 0px 0px 0px;
+	width: 240px;
+}
+
+#signup_button {
+	background-color: #4458c0;
+	float: right;
+}
+
+#bg_home {
+	background-color: #080808;
+    background-image: url("landing.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    font-family: 'TypoSlabserif-Light';
+    height: 100%;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    overflow: auto;
+    width: 100%;
+}
+
+#land_logo.image {
+	background-color: white;
+    content:url('logo_cropped_neg.png');
+    float: left;
+    height: 60%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#explain_full {
+	font-size: 16px;
+	height: 260px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width: 540px;
+}
+
+#explain_title {
+	color: #ddd;
+	font-family: 'Agency FB';
+	font-size: 28px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 12px;
+	width: 180px;
+}
+
+input {
+	font-family: 'TypoSlabserif-Light';
+	padding: 1px 5px 1px 5px;
+}
+
+.land_ff {
+	padding-top: 18px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 280px;
+}
+
+.land_ff input {
+	float: right;
+}
+
+#login_box {
+	height: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 250px;
+	width: 800px;
+}
+
+#login_box_title {
+	font-color: #444;
+	font-family: 'Agency FB';
+	font-size: 48px;
+	margin-top: -10px;
+}
+
+#login_small {
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 50px 0 50px #222;
+	float: right;
+	height: 186px; /* 310px for full size */
+	opacity: 0.95;
+	padding: 40px;
+	position: relative;
+	transition: 0.4s;
+	width: 280px;
+}
+
+#login_small.filling {
+	height: 264px;
+	transition: 0.4s;
+}
+
+.nav_button {
+	cursor: pointer;
+	cursor: hand;
+	float: right;
+	font-size: 18px;
+	height: 39px;
+	margin-right: 0.2%;
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-top: 14px;
+	position: relative;
+	transition: 0.1s;
+}
+
+.nav_button:hover {
+	background-color: rgba(16, 16, 16, 0.8);
+	color: #eee;
+	transition: 0.3s;
+}
+
+#nav_float {
+	background-color: #444;
+	color: white;
+	height: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	z-index: 99;
+}
+
+#signup_fields {
+	height: 84px;
+	overflow: hidden;
+	transition: 0.4s;
+}
+
+#signup_fields_chat {
+	height: 160px;
+}
+
+#signup_fields.filling {
+	height: 160px;
+	transition: 0.4s;
+}
+
+#signup_modal {
+	background-color: rgba(34, 34, 34, 1);
+	max-height: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 50px;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+	width: 100%;
+	z-index: 500;
+}
+
+#signup_modal.active {
+	display: inline-block;
+	max-height: 500px;
+	overflow: auto;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
+}
+
+#username_explain {
+	background-color: #111;
+	color: #111;
+	cursor: pointer;
+	cursor: hand;
+	height: 100%;
+	margin-top: -60px;
+	overflow: hidden;
+	position: fixed;
+	transition: 0.7s;
+	top: 100%;
+	width: 100%;
+}
+
+#username_explain.active {
+	background-color: #222;
+	color: white;
+	cursor: default;
+	top: 50%;
+	overflow: auto;
+	bottom: 0px;
+	opacity: 0.9;
+	padding-top: 20px;
+	transition: 0.5s;
+	z-index: 600;
+}

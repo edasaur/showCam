@@ -1,4 +1,8 @@
 class HomeController < ApplicationController
+  def index
+  	render :partial => "index"
+  end
+
   def signup
   end
 
@@ -6,5 +10,8 @@ class HomeController < ApplicationController
   end
 
   def download
+  end
+
+  def about
   end
 end

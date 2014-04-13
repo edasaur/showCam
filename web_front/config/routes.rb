@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'home/', to: 'home#index'
+
   get 'receiver/photo'
 
   get 'home/signup'#, to: ''
@@ -7,7 +9,7 @@ Rails.application.routes.draw do
 
   get 'home/download'
 
-  #post '/Receiver/receive' 
+  #post '/Receiver/photo' 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

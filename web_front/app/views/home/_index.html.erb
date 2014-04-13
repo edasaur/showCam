@@ -32,37 +32,7 @@
 				<div id='download_bar'>
 					.
 				</div>
-				<div id='login_small'>
-					<div id='login_box_title'>
-						Log In or Sign Up
-					</div>
-					<div id='signup_fields'>
-						<div class='land_ff'>
-							Username <input type='text' name='username'></br>
-						</div>
-						<div class='land_ff'>
-							Password <input type='password' name='password'></br>
-						</div>
-						<div class='land_ff'>
-							Confirm Password <input type='password' name='password'></br>
-						</div>
-						<div class='land_ff'>
-							Email <input type='text' name='email'>
-						</div>
-					</div>
-					<div id='login_subtext'>
-						Remember Me <input type="checkbox" name="rememberme" value="remembered"> 
-					</div>
-					<div class='clearfix'></div>
-					<button id='signup_button' type='button'>
-						Sign Up
-					</button>
-					<a href='view.html'>
-						<button id='login_button' type='submit'>
-							Log In
-						</button>
-					</a>
-				</div>
+				<%= render :partial => "login" %>
 			</div>
 			<%= render :partial => "about" %>
 		</div>

@@ -4,6 +4,8 @@ class HomeController < ApplicationController
   end
 
   def signup
+  	
+  	render
   end
 
   def login
@@ -11,7 +13,7 @@ class HomeController < ApplicationController
 
   def download
   end
-
+  
   def about
   end
 end

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
   get 'home/', to: 'home#index'
 
   get 'receiver/photo'
@@ -8,6 +10,8 @@ Rails.application.routes.draw do
   get 'home/login'
 
   get 'home/download'
+
+#  get 'dashboard'
 
   #post '/Receiver/photo' 
   # The priority is based upon order of creation: first created -> highest priority.

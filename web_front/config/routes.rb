@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post 'receiver/', 'receiver#create'
 
   get 'users/new'
 

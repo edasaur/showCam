@@ -1,0 +1,3 @@
+server:google.com
+username:Anting
+password:abc123456
